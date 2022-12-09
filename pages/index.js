@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from './../ui/header'
 import Footer from './../ui/footer'
 
-export default function Home() {
+ function Home() {
   return (
     <div>
       <Head>
@@ -12,7 +12,29 @@ export default function Home() {
       </Head>
     </div>
   )
-}
+};
+
+
+// in app 
+
+// export async function getServerSideProps () {
+//   const user = localStorage.getItem('User');
+
+//   if (!user) {
+//     return {
+//       redirect: {
+//         destination: '/unAuthenticated',
+//         permanent: false,
+//       },
+//     }
+//   }
+
+//   return {
+//     props: { user },
+//   }
+// } 
+
+export default Home;
 
 // link example with pathname and values as query  and also get the value of the query 
 
