@@ -1,23 +1,24 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
+import st from "./Header.module";
 
 function Header() {
   return (
     <>
-    <div>Header</div>
-    <ul>
-      <li>
-        <Link href="/">Home</Link>
-      </li>
-      <li>
-        <Link href="/about-us">About Us</Link>
-      </li>
-      <li>
-        <Link href="/blog">Blog</Link>
-      </li>
-    </ul>
+      <st.H1>Header</st.H1>
+      <ul>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/about-us">About Us</Link>
+        </li>
+        <li>
+          <Link href="/blog">Blog</Link>
+        </li>
+      </ul>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;

@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--Montserrat);
+}
+
+/*---------------------------------------
+    TYPOGRAPHY               
+  -----------------------------------------*/
+
+p {
+  color: var(--p-color);
+}
+
+ul li {
+  color: var(--p-color);
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  touch-action: manipulation;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+a {
+  color: var(--p-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+::selection {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+::-moz-selection {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.br16 {
+  border-radius: 16px;
+}
+.br6 {
+  border-radius: 6px;
+}
+.br4 {
+  border-radius: 4px;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+}

@@ -1,8 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/globals.css";
+import "../globals.css";
 import { useEffect } from "react";
 import Header from "../ui/header";
 import Footer from "../ui/footer";
+import { ThemeProvider } from 'styled-components'
+import { myTheme } from '../theme'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -10,9 +12,11 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return <>
-    <Header />
-    <Component {...pageProps} />
-    <Footer />
+    <ThemeProvider theme={myTheme}>
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
+    </ThemeProvider>
   </>
 }
 
