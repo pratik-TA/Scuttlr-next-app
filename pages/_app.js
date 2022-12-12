@@ -3,38 +3,38 @@ import "../styles/globals.css";
 import { useEffect } from "react";
 import Header from '../ui/header/index'
 import Footer from '../ui/footer/index'
-import { AppWrapper } from "../context/authContext";
+import AuthContext from '../context/AuthContext'
+import UnAuth from "./unAuthenticated";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
-    const data = localStorage.getItem('Data');
-
-    if (!data) {
-      // return {
-      //   redirect: {
-      //     destination: '/unAuthenticated',
-      //     permanent: false,
-      //   },
-      // }
-    }
 
   }, []);
 
+  const name = 'testing';
+
+
+
+  // for unauthorized user 
+
+  if (!name) {
+    return <UnAuth />
+  }
+
   return (
     <>
-     {/* <AppWrapper> */}
+      <AuthContext.Provider value={name}>
         <Header />
         <Component {...pageProps} />
         <Footer />
-     {/* </AppWrapper> */}
+      </AuthContext.Provider>
     </>
   )
 }
 
-// const user = localStorage.getItem('User')
 
-// export async function getServerSideProps (user) {
+// export async function getServerSideProps () {
 
 
 //   if (!user) {
