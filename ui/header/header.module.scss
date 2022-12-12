@@ -1,0 +1,37 @@
+@use "../../theme/index.module.scss" as *;
+
+.navBar {
+  @include flex(center, space-between, unset, row, nowrap);
+  padding: 1rem 0;
+
+  ul {
+    li {
+      position: relative;
+      margin: 0 5px;
+      a {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $primary;
+        text-transform: capitalize;
+        padding: 0;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 20px;
+        height: 1px;
+        background-color: $secondary;
+      }
+      &:hover {
+        & > a {
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  .lateNav {
+  }
+}

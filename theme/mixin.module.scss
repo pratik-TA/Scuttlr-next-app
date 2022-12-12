@@ -1,0 +1,44 @@
+@mixin flex($align-items, $justify-content, $gap, $flex-flow, $flex-wrap) {
+  display: flex;
+  //align-items
+  @if $align-items {
+    align-items: $align-items;
+  } @else {
+    align-items: center;
+  }
+  //justify-content
+  @if $justify-content {
+    justify-content: $justify-content;
+  } @else {
+    justify-content: center;
+  }
+  //gap
+  @if $gap {
+    gap: $gap;
+  } @else {
+    gap: 0rem;
+  }
+  //flex-flow
+  @if $flex-flow {
+    flex-flow: $flex-flow;
+  } @else {
+    flex-flow: row;
+  }
+  //flex-wrap
+  @if $flex-flow {
+    flex-wrap: $flex-wrap;
+  } @else {
+    flex-wrap: nowrap;
+  }
+}
+
+@mixin grid($frs, $gap) {
+  display: grid;
+  grid-template-columns: $frs;
+  //gap
+  @if $gap {
+    gap: $gap;
+  } @else {
+    gap: 0rem;
+  }
+}

@@ -1,13 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../globals.css";
+import "../globals.scss";
 import { useEffect } from "react";
-import Header from "../ui/header";
-import Footer from "../ui/footer";
-import { ThemeProvider } from 'styled-components'
-import { myTheme } from '../theme'
 import Header from '../ui/header/index'
 import Footer from '../ui/footer/index'
-import { AppWrapper } from "../context/authContext";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -27,13 +22,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-        <ThemeProvider theme={myTheme}>
-     {/* <AppWrapper> */}
-        <Header />
-        <Component {...pageProps} />
-        <Footer />
-     {/* </AppWrapper> */}
-    </ThemeProvider>
+      {/* <AppWrapper> */}
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
+      {/* </AppWrapper> */}
     </>
   )
 }

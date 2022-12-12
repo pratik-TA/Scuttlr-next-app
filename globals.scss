@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@use "./theme/index.module.scss" as *;
 
 * {
   margin: 0;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: var(--Montserrat);
+  font-family: $montserrat;
 }
 
 /*---------------------------------------
@@ -31,22 +31,22 @@ button {
 }
 
 a {
-  color: var(--p-color);
+  color: $fontDark;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--secondary);
+  color: $secondary;
 }
 
 ::selection {
-  background: var(--secondary);
-  color: var(--white);
+  background: $secondary;
+  color: $white;
 }
 
 ::-moz-selection {
-  background: var(--secondary);
-  color: var(--white);
+  background: $secondary;
+  color: $white;
 }
 
 .br16 {
@@ -64,4 +64,18 @@ button {
   border-radius: 0;
   outline: none;
   box-shadow: none;
+}
+
+.form-select {
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.dropdown-menu {
+  box-shadow: $boxShadow;
+  border: 1px solid #efefef;
 }

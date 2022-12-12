@@ -1,8 +1,4 @@
 import Head from 'next/head'
-import Footer from '../ui/footer'
-import Header from '../ui/header'
-import { ThemeProvider } from 'styled-components'
-import { myTheme } from '../theme'
 export default function Home() {
   return (
     <>
