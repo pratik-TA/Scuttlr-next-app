@@ -1,0 +1,17 @@
+.rightFollow {
+    flex: 7;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 30px;
+    div {
+        padding: 15px 0;
+    }
+    .submit {
+        padding: 10px 30px;
+        border: none;
+        border-radius: 32px;
+        background-color: #1893F8;
+        color: #FFFFFF;
+    }
+}

@@ -1,0 +1,27 @@
+.followtUs {
+    display: flex;
+    flex-flow: column;
+    color: #FFFFFF;
+    background-color: #002248;
+    border-radius: 10px;
+    padding: 30px;
+    .leftFollow {
+        flex: 3;
+        .followContainer {
+            display: flex;
+            .followLeft {
+                flex: 1;
+                img {
+                    height: 30px;
+                    width: 30px;
+                    padding: 5px;
+                    border-radius: 50px;
+                    background: #EFEFEF;
+                }
+            }
+            .followRight {
+                flex: 9;
+            }
+        }
+    }
+}

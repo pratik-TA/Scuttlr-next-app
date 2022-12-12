@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Button from '../../../components/form/button/Button'
 import Input from '../../../components/form/input/Input'
 import TextArea from '../../../components/form/text-area/TextArea'
-import styles from './GetInTouch.module.scss'
+import st from './GetInTouch.module.scss'
 
 function GetInTouch() {
   const [name, setName] = useState('');
@@ -15,7 +15,8 @@ function GetInTouch() {
     console.log(name, lastName, email, message)
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <div className={`${st.rightFollow}`}>
+      <form onSubmit={handleSubmit}>
       <h3>
         GetInTouch
       </h3>
@@ -30,9 +31,10 @@ function GetInTouch() {
         <TextArea label='Message' placeholder='Type here..' value={message} onChange={(e) => setMessage(e.target.value)} />
       </div>
       <div>
-        <Button name='Submit' className=''/>
+        <Button name='Submit' className={`${st.submit}`}/>
       </div>
     </form>
+    </div>
   )
 }
 
