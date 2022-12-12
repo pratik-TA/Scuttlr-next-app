@@ -1,0 +1,43 @@
+$fontDark : #002248;
+$fontlight : #5C6A7A;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// .home-line{
+.homeLine{
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        padding-left: 0;
+        margin-top: 24px;
+        .home {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 16px;
+            color: $fontlight;
+        }
+        .div-line {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 16px;
+            color: $fontlight;
+        }
+        .privacy-policy {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 16px;
+            color: $fontDark;
+        }
+    }
+    li{
+        list-style-type: none;
+        img {
+            height: 21px;
+            width: 21px;
+        }
+    }
+}

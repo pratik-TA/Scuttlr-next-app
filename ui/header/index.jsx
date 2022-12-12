@@ -18,6 +18,9 @@ function Header() {
       <li>
         <Link href='/review-booking'>Review Booking</Link>
       </li>
+      <li>
+        <Link href='/about-us'>About Us</Link>
+      </li>
     </ul>
     </>
   )
