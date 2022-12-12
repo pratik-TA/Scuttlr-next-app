@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Input from "../../components/form/input/Input";
 import Button from "../../components/form/button/Button";
 import { useRouter } from "next/navigation";
+import AddGuest from "../../components/basic-components/AddGuest";
+import LeftArrow from "../../assets/icon/leftArrow.svg";
 
 function ReviewBooking() {
   const [promocode, setPromocode] = useState("");
@@ -13,7 +15,10 @@ function ReviewBooking() {
   };
   return (
     <div className="container">
-      <h3 onClick={() => router.back()}>{"<"} Review Your Booking</h3>
+      <h3 onClick={() => router.back()}>
+        <img src={LeftArrow.src} alt="left arrow" />
+        <span>Review Your Booking</span>
+      </h3>
 
       {/* left  */}
       <div>
@@ -65,24 +70,7 @@ function ReviewBooking() {
           <h4>Guest Details</h4>
 
           {/* add guest  */}
-          <div>
-            <select>
-              <option>Mr</option>
-              <option>Mrs</option>
-              <option>Miss</option>
-            </select>
-            <Input label="First name" placeholder="Enter first name" />
-            <Input label="Last name" placeholder="Enter last name" />
-          </div>
-
-          <div>
-            <Input label="Email Address" placeholder="Enter email" />
-            <Input label="Mobile Number" placeholder="Enter number" />
-          </div>
-
-          <div>
-            <Button name="Reserve Now" />
-          </div>
+          <AddGuest />
         </form>
       </div>
 
