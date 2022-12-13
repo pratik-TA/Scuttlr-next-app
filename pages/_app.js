@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "../globals.scss";
 import { useEffect } from "react";
 import Header from '../ui/header/index'

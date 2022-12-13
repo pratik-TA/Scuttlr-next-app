@@ -38,14 +38,18 @@ function Header() {
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">
+                    <a
+                      class={`${st.navLink} nav-link dropdown active`}
+                      aria-current="page"
+                      href="#"
+                    >
                       Home
                     </a>
                   </li>
                   {/*  */}
-                  <li class="nav-item dropdown">
+                  <li class="nav-item">
                     <a
-                      class="nav-link dropdown-toggle"
+                      class={`${st.navLink} nav-link dropdown dropdown-toggle`}
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -73,18 +77,18 @@ function Header() {
                   </li>
                   {/*  */}
                   <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class={`${st.navLink} nav-link`} href="#">
                       Support
                     </a>
                   </li>
                   {/*  */}
                   <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class={`${st.navLink} nav-link`} href="#">
                       Member Plans
                     </a>
                   </li>
                 </ul>
-                <ul class={`${st.lateNav} navbar-nav`}>
+                <ul class={`${st.lateNav} navbar-nav `}>
                   <li class="nav-item dropdown">
                     <a
                       class="nav-link dropdown-toggle"
@@ -96,20 +100,47 @@ function Header() {
                       <img src={en.src} alt="" height={"30px"} />{" "}
                       <span>EN</span>
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class={`${st.dropdownMenu} dropdown-menu `}>
                       <li>
                         <a class="dropdown-item" href="#">
-                          About Us
+                          <img src={en.src} alt="" height={"30px"} />{" "}
+                          <span>EN</span>
                         </a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#">
-                          Blogs
+                          <img src={en.src} alt="" height={"30px"} />{" "}
+                          <span>EN</span>
                         </a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#">
-                          FAQ’s
+                          <img src={en.src} alt="" height={"30px"} />{" "}
+                          <span>EN</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img src={en.src} alt="" height={"30px"} />{" "}
+                          <span>EN</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img src={en.src} alt="" height={"30px"} />{" "}
+                          <span>EN</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img src={en.src} alt="" height={"30px"} />{" "}
+                          <span>EN</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img src={en.src} alt="" height={"30px"} />{" "}
+                          <span>EN</span>
                         </a>
                       </li>
                     </ul>
@@ -122,23 +153,26 @@ function Header() {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img src={usd.src} alt="" height={"20px"} />{" "}
+                      <img src={usd.src} alt="" height={"20px"} />
                       <span>USD</span>
                     </a>
                     <ul class="dropdown-menu">
                       <li>
                         <a class="dropdown-item" href="#">
-                          About Us
+                          <img src={usd.src} alt="" height={"20px"} />
+                          <span>USD</span>
                         </a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#">
-                          Blogs
+                          <img src={usd.src} alt="" height={"20px"} />
+                          <span>USD</span>
                         </a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#">
-                          FAQ’s
+                          <img src={usd.src} alt="" height={"20px"} />
+                          <span>USD</span>
                         </a>
                       </li>
                     </ul>
