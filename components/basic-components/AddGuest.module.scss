@@ -1,0 +1,28 @@
+.titleContainer {
+    display: flex;
+    gap: 17px;
+    select {
+        padding: 10px 10px;
+        border: 1px solid #E0E0E0;
+        border-radius: 5px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 14px;
+        color: #696E79;
+        outline: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+.emailContainer {
+    display: flex;
+    gap: 20px;
+}
+.priceReservebtn {
+    padding: 13px 0;
+    border: none;
+    background: #1893F8;
+    border-radius: 27px;
+    color: #FFFFFF;
+    width: 100%;
+    margin: 20px 0;
+}

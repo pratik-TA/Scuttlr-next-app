@@ -4,6 +4,7 @@ import Button from "../../components/form/button/Button";
 import { useRouter } from "next/navigation";
 import AddGuest from "../../components/basic-components/AddGuest";
 import LeftArrow from "../../assets/icon/leftArrow.svg";
+import st from "./ReviewBooking.module.scss";
 
 function ReviewBooking() {
   const [promocode, setPromocode] = useState("");
@@ -19,54 +20,56 @@ function ReviewBooking() {
         <img src={LeftArrow.src} alt="left arrow" />
         <span>Review Your Booking</span>
       </h3>
-
+    <div className={`${st.priceContainer}`}>
       {/* left  */}
-      <div>
+      <div className={`${st.leftpriceContainer}`}>
         {/* card  */}
         <div>card</div>
 
         {/* duration */}
-        <div>
+        <div className={`${st.checkContainer}`}>
           {/* 1 */}
           <div>
             <span>Check In</span>
             <h5>Mon, 05 Dec 2022</h5>
-            <span>02:00 PM</span>
+            <p>02:00 PM</p>
           </div>
 
           {/* 2 */}
           <div>
             <span>Check Out</span>
             <h5>Wed, 07 Dec 2022</h5>
-            <span>12:00 PM</span>
+            <p>12:00 PM</p>
           </div>
 
           {/* 3 */}
           <div>
             <span>Guest</span>
             <h5>1 night, 2 adults</h5>
-            <span>1 Nights</span>
+            <p>1 Nights</p>
           </div>
         </div>
 
         {/* room and person details  */}
-        <div>
+        <div className={`${st.roomDetails}`}>
           <h5>1 night, 2 adults</h5>
-          <div>
-            <span>1 x Superior Room, 1 Queen Bed with Sofa bed</span>
+          <div className={`${st.roomData}`}>
+            <div>
+              <span>1 x Superior Room, 1 Queen Bed with Sofa bed</span>
+            </div>
+            <span className={`${st.roomIcon}`}>
+              <p>icon</p>
+              <span>2 adults</span>
+            </span>
+            <span>
+              Rooms only <b>Refundable</b>
+            </span>
+            <p>View Booking & Cancellation Policy</p>
           </div>
-          <span>
-            <p>icon</p>
-            <span>2 adults</span>
-          </span>
-          <span>
-            Rooms only <b>Refundable</b>
-          </span>
-          <p>View Booking & Cancellation Policy</p>
         </div>
 
         {/* guest details  */}
-        <form onSubmit={handleSubmit}>
+        <form className={`${st.guestDetails}`} onSubmit={handleSubmit}>
           <h4>Guest Details</h4>
 
           {/* add guest  */}
@@ -76,54 +79,54 @@ function ReviewBooking() {
 
       {/* right  */}
 
-      <div>
+      <div className={`${st.rightpriceContainer}`}>
         {/* 1 */}
-        <div>
+        <div className={`${st.priceSummary}`}>
           <h4>Price Summary</h4>
-          <div>{/* center border */}</div>
+          <hr>{/* center border */}</hr>
 
           <div>
-            <div>
-              <span>Room Charges (1 room X 1 night)</span>
-              <span>$1200</span>
+            <div className={`${st.roomPrice}`}>
+              <p>Room Charges (1 room X 1 night)</p>
+              <p>$1200</p>
             </div>
-            <div>
-              <span>Taxes & Fees</span>
-              <span>$2400</span>
+            <div className={`${st.roomPrice}`}>
+              <p>Taxes & Fees</p>
+              <p>$2400</p>
             </div>
           </div>
 
-          <div>{/* center border */}</div>
+          <hr>{/* center border */}</hr>
 
           <div>
-            <div>
+            <div className={`${st.roomPrice}`}>
               <span>Total (Pay at property)</span>
               <span>$14400</span>
             </div>
-            <div>
+            <div className={`${st.roomPrice}`}>
               <span>Total (Pay in property’s currency)</span>
-              <span>$153.99</span>
+              <p>$153.99</p>
             </div>
           </div>
         </div>
 
         {/* 2 */}
-        <div>
+        <div className={`${st.priceMember}`}>
           <span>Members pay only</span>
           <span>$11000</span>
         </div>
 
         {/* 3 */}
-        <div>
+        <div className={`${st.priceOffers}`}>
           <h4>Scuttlr Offers</h4>
-          <div>
+          <div className={`${st.offerContainer}`}>
             {/* <span> */}
             <input
               placeholder="Got a promocode?"
               value={promocode}
               onChange={(e) => setPromocode(e.target.value)}
             />
-            <Button
+            <Button className={`${st.offerapplybtn}`}
               name="Apply"
               onClick={() => {
                 alert(promocode);
@@ -134,6 +137,7 @@ function ReviewBooking() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

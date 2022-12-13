@@ -1,0 +1,164 @@
+.priceContainer {
+    display: flex;
+    gap: 30px;
+    .leftpriceContainer {
+        flex: 6;
+        display: flex;
+        flex-flow: column;
+        gap: 25px;
+    }
+    .guestDetails {
+        h4 {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 20px;
+            color: #002248;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+    .rightpriceContainer {
+        flex: 4;
+        display: flex;
+        flex-flow: column;
+        gap: 25px;
+        .priceSummary {
+            padding: 17px;
+            border: 1px solid #E0E0E0;
+            border-radius: 10px;
+            h4 {
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 47px;
+                color: #1B1B1B;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .roomPrice {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                span {
+                    padding-bottom: 15px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #002248;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                p {
+                    padding-bottom: 15px;
+                    margin-bottom: 0;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 16px;
+                    color: #697687;
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
+        }
+        .priceMember {
+            padding: 20px 15px;
+            border: 1px solid #E0E0E0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 20px;
+                color: #002248;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+        .priceOffers {
+            padding: 20px 15px;
+            border: 1px solid #E0E0E0;
+            border-radius: 10px;
+            .offerContainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border: 1px solid #E0E0E0;
+                border-radius: 5px;
+                padding: 6px 8px;
+                input {
+                    border: none;
+                    width: 100%;
+                    outline: none;
+                }
+                .offerapplybtn {
+                    padding: 8px 23px;
+                    background: #1893F8;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .checkContainer {
+        display: flex;
+        gap: 50px;
+        padding: 21px 23px 35px 23px;
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        span,
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            color: #697687;
+            font-family: 'Montserrat', sans-serif;
+        }
+        h5 {
+            padding: 5px 0;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 20px;
+            color: #002248;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+    .roomDetails {
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        h5 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 20px;
+            color: #002248;
+            font-family: 'Montserrat', sans-serif;
+            background: #F8F8F8;
+            border-radius: 10px 10px 0px 0px;
+            padding: 23px;
+        }
+        .roomData {
+            padding: 0 23px 23px 23px;
+            span {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 16px;
+                color: #697687;
+                font-family: 'Montserrat', sans-serif;
+            }
+            p {
+                padding-top: 10px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #002248;
+                font-family: 'Montserrat', sans-serif;
+            }
+            b {
+                padding-left: 15px;
+                color: #1893F8;
+            }
+            .roomIcon {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+    }
+}
