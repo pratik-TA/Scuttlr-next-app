@@ -8,46 +8,16 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
     const data = localStorage.getItem('Data');
-
-    if (!data) {
-      // return {
-      //   redirect: {
-      //     destination: '/unAuthenticated',
-      //     permanent: false,
-      //   },
-      // }
-    }
-
   }, []);
 
   return (
     <>
-      {/* <AppWrapper> */}
       <Header />
       <Component {...pageProps} />
       <Footer />
-      {/* </AppWrapper> */}
     </>
   )
 }
 
-// const user = localStorage.getItem('User')
-
-// export async function getServerSideProps (user) {
-
-
-//   if (!user) {
-//     return {
-//       redirect: {
-//         destination: '/unAuthenticated',
-//         permanent: false,
-//       },
-//     }
-//   }
-
-//   return {
-//     props: { user },
-//   }
-// } 
 export default MyApp;
 

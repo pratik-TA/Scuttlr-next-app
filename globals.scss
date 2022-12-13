@@ -80,3 +80,21 @@ button {
   box-shadow: $boxShadow;
   border: 1px solid #efefef;
 }
+
+.modal.modalShow {
+  display: block;
+  background: #00000080;
+  opacity: 1;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: 0;
+  }
+  100% {
+    visibility: 0;
+    opacity: 1;
+  }
+}
