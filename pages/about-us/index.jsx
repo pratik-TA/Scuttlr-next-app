@@ -10,7 +10,7 @@ function AboutUs() {
     <div className="container">
       <BreadCrumbs />
       <h2>How It Works</h2>
-      <div>
+      <div className={`${st.desc}`}>
         {/* 1 */}
         <div>
           <p>
@@ -46,7 +46,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <div>
+      <div className={`${st.videoContainer}`}>
         {/* 1 */}
         <div>video</div>
 
@@ -71,7 +71,7 @@ function AboutUs() {
 
       <div>
         <h2>Why Us?</h2>
-        <div>
+        <div className={`${st.whyUs}`}>
           <div>
             <p>
               We work together every day to keep our promise to users to provide
@@ -106,7 +106,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <div>
+      <div className={`${st.quotePara}`}>
         <div>
           {/* icon */}
           <h5>
@@ -138,9 +138,9 @@ function AboutUs() {
       <div>top 3 blog list</div>
 
       {/* download app  */}
-      <div>
+      <div className={`${st.downloanApp}`}>
         {/* left  */}
-        <div>
+        <div className={`${st.leftdownloanApp}`}>
           <p>Download Our App</p>
           <h1>App is available for free on app store</h1>
           <span>
@@ -154,7 +154,7 @@ function AboutUs() {
         </div>
 
         {/* right  */}
-        <div>
+        <div className={`${st.rightdownloanApp}`}>
           <img src={MobileImage.src} alt="mobile image" />
         </div>
       </div>
