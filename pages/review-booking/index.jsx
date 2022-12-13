@@ -6,6 +6,7 @@ import AddGuest from "../../components/basic-components/AddGuest";
 import LeftArrow from "../../assets/icon/leftArrow.svg";
 import st from "./ReviewBooking.module.scss";
 import Sale from '../../assets/icon/Sale.svg'
+import UsersGroup from '../../assets/ScuttlrIcons/UsersGroup.svg'
 
 function ReviewBooking() {
   const [promocode, setPromocode] = useState("");
@@ -59,7 +60,7 @@ function ReviewBooking() {
               <span>1 x Superior Room, 1 Queen Bed with Sofa bed</span>
             </div>
             <span className={`${st.roomIcon}`}>
-              <p>icon</p>
+              <p><img src={UsersGroup.src} alt="UsersGroup" /></p>
               <span>2 adults</span>
             </span>
             <span>
