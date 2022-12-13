@@ -1,12 +1,12 @@
 import React from 'react'
-import styles from './Input.module.scss'
+import st from './Input.module.scss'
 
 function Input({ label , placeholder , ...others }) {
     return (
-        <>
-            <label>{label}</label>
-            <input type='text' placeholder={placeholder} {...others}/>
-        </>
+        <div className={`${st.inputContainer}`}>
+            <label className={`${st.label}`}>{label}</label>
+            <input className={`${st.input}`} type='text' placeholder={placeholder} {...others}/>
+        </div>
     )
 }
 

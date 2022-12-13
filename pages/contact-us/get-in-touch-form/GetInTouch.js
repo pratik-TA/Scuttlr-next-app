@@ -20,17 +20,17 @@ function GetInTouch() {
       <h3>
         GetInTouch
       </h3>
-      <div>
+      <div className={`${st.nameLabel} ${st.conForm}`}>
         <Input label='Name' placeholder='Emily Cooper' value={name} onChange={(e) => setName(e.target.value)} />
         <Input label='Last name' placeholder='Enter last name' value={lastName} onChange={(e) => setLastName(e.target.value)} />
       </div>
-      <div>
+      <div className={`${st.conForm}`}>
         <Input label='Email' placeholder='Enter email' value={email} onChange={(e) => setEmail(e.target.value)} />
       </div>
-      <div>
+      <div className={`${st.conForm}`}>
         <TextArea label='Message' placeholder='Type here..' value={message} onChange={(e) => setMessage(e.target.value)} />
       </div>
-      <div>
+      <div className={`${st.conForm}`}>
         <Button name='Submit' className={`${st.submit}`}/>
       </div>
     </form>
