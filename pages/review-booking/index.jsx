@@ -4,6 +4,7 @@ import Button from "../../components/form/button/Button";
 import { useRouter } from "next/navigation";
 import AddGuest from "../../components/basic-components/AddGuest";
 import LeftArrow from "../../assets/icon/leftArrow.svg";
+import Sale from '../../assets/icon/Sale.svg'
 
 function ReviewBooking() {
   const [promocode, setPromocode] = useState("");
@@ -118,6 +119,8 @@ function ReviewBooking() {
           <h4>Scuttlr Offers</h4>
           <div>
             {/* <span> */}
+
+            <img src={Sale.src} alt='sale' />
             <input
               placeholder="Got a promocode?"
               value={promocode}
