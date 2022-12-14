@@ -49,8 +49,7 @@ function AboutUs() {
 
       <div className={`${st.videoContainer}`}>
         {/* 1 */}
-        <div className={`${st.video}`}>video</div>
-        <div>
+        <div className={`${st.video}`}>
           <iframe
             width="560"
             height="315"
@@ -160,9 +159,8 @@ function AboutUs() {
             vestibul um sit turpis lectus felis faucibus.
           </span>
           <div className={`${st.downloandIcon}`}>
-            <img src={PlayStore.src} alt="playstore" />
-            <img src={AppleStore.src} alt="applestore" />
-          <div>
+            {/* <img src={PlayStore.src} alt="playstore" />
+            <img src={AppleStore.src} alt="applestore" /> */}
             <Link href="https://www.google.com/" target="_blank">
               <img src={PlayStore.src} alt="playstore" />
             </Link>
@@ -171,15 +169,12 @@ function AboutUs() {
             </Link>
           </div>
         </div>
-
         {/* right  */}
         <div className={`${st.rightdownloandApp}`}>
           <img src={MobileImage.src} alt="mobile image" />
         </div>
       </div>
     </div>
-    </div>
-    
   );
 }
 
