@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../form/button/Button'
 import Input from '../form/input/Input'
+import SelectWithInput from '../form/select-option-with-input/SelectWithInput'
 import Select from '../form/select/Select'
 import st from './AddGuest.module.scss'
 
@@ -14,14 +15,15 @@ function AddGuest() {
     return (
         <div>
             <div className={`${st.titleContainer}`}>
-                <Select label='Title' data={optionData}>data </Select>
+                <Select label='Title' data={optionData} />
                 <Input label="First name" placeholder="Enter first name" />
                 <Input label="Last name" placeholder="Enter last name" />
             </div>
 
             <div className={`${st.emailContainer}`}>
                 <Input label="Email Address" placeholder="Enter email" />
-                <Input label="Mobile Number" placeholder="Enter number" />
+                {/* <Input label="Mobile Number" placeholder="Enter number" /> */}
+                <SelectWithInput label='Mobile Number' data={optionData} placeholder='Enter number'/>
             </div>
 
             <div>
