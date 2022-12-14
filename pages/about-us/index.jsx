@@ -3,7 +3,8 @@ import BreadCrumbs from "../../components/breadcrumbs/BreadCrumbs";
 import PlayStore from "../../assets/img/playStore.svg";
 import AppleStore from "../../assets/img/appleStore.svg";
 import MobileImage from "../../assets/img/mobileImage.svg";
-import st from './AboutUs.module.scss'
+import st from "./AboutUs.module.scss";
+import Link from "next/link";
 
 function AboutUs() {
   return (
@@ -48,7 +49,9 @@ function AboutUs() {
 
       <div className={`${st.videoContainer}`}>
         {/* 1 */}
-        <div>video</div>
+        <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ucq1sLjLVSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
         {/* 2 */}
         <div>
@@ -148,8 +151,12 @@ function AboutUs() {
             vestibul um sit turpis lectus felis faucibus.
           </span>
           <div>
-            <img src={PlayStore.src} alt="playstore" />
-            <img src={AppleStore.src} alt="applestore" />
+            <Link href="https://www.google.com/" target='_blank'>
+              <img src={PlayStore.src} alt="playstore" />
+            </Link>
+            <Link href="https://www.google.com/" target='_blank'>
+              <img src={AppleStore.src} alt="applestore" />
+            </Link>
           </div>
         </div>
 
