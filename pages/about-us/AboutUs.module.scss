@@ -16,18 +16,24 @@
   .desc {
     display: flex;
     gap: 50px;
+    div {
+        flex: 5;
+    }
   }
   .videoContainer {
     margin: 42px 0 57px 0;
-    padding: 53px 70px;
+    padding: 53px 60px;
     display: flex;
-    gap: 70px;
+    gap: 60px;
     color: #ffffff;
     background: #002248;
     box-shadow: 0px 60px 140px -16px rgba(37, 45, 61, 0.06);
     border-radius: 12px;
     .video {
       flex: 4;
+      iframe {
+        width: 100%;
+      }
     }
     .videoDesc {
       flex: 6;
@@ -43,6 +49,9 @@
   .whyUs {
     display: flex;
     gap: 50px;
+    div {
+        flex: 5;
+    }
   }
   .quotePara {
     margin: 70px 0;
@@ -56,9 +65,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 60px;
-        width: 60px;
-        background-size: 60px;
+        height: 80px;
+        width: 80px;
+        background-size: 80px;
         z-index: 1;
         opacity: 0.2;
         background-repeat: no-repeat;
@@ -87,10 +96,12 @@
       .downloandIcon {
         margin-top: 19px;
         display: flex;
+        align-items: center;
         gap: 13px;
         flex-wrap: nowrap;
-        img {
-          width: 100px;
+        &img:nth-child(1) {
+          width: 156px;
+          height: auto;
         }
       }
       h1 {
