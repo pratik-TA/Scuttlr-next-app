@@ -50,7 +50,15 @@ function AboutUs() {
       <div className={`${st.videoContainer}`}>
         {/* 1 */}
         <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ucq1sLjLVSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ucq1sLjLVSA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
 
         {/* 2 */}
@@ -151,10 +159,10 @@ function AboutUs() {
             vestibul um sit turpis lectus felis faucibus.
           </span>
           <div>
-            <Link href="https://www.google.com/" target='_blank'>
+            <Link href="https://www.google.com/" target="_blank">
               <img src={PlayStore.src} alt="playstore" />
             </Link>
-            <Link href="https://www.google.com/" target='_blank'>
+            <Link href="https://www.google.com/" target="_blank">
               <img src={AppleStore.src} alt="applestore" />
             </Link>
           </div>
