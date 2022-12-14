@@ -1,40 +1,122 @@
-.desc {
+.aboutUs {
+  h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    color: #002248;
+    font-family: "Montserrat", sans-serif;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #5c6a7a;
+    font-family: "Montserrat", sans-serif;
+  }
+  .desc {
     display: flex;
     gap: 50px;
-}
-.videoContainer {
+  }
+  .videoContainer {
+    margin: 42px 0 57px 0;
     padding: 53px 70px;
     display: flex;
     gap: 70px;
-    color: #FFFFFF;
+    color: #ffffff;
     background: #002248;
     box-shadow: 0px 60px 140px -16px rgba(37, 45, 61, 0.06);
     border-radius: 12px;
-}
-.whyUs {
-    display: flex;
-    gap: 50px;
-}
-.quotePara {
-    display: flex;
-    gap: 50px;
-    div {
-        flex: 5;
+    .video {
+      flex: 4;
     }
-}
-.downloanApp {
+    .videoDesc {
+      flex: 6;
+    }
+    h2 {
+      color: #ffffff;
+    }
+    p {
+      color: #ffffff;
+      opacity: 0.78;
+    }
+  }
+  .whyUs {
+    display: flex;
+    gap: 50px;
+  }
+  .quotePara {
+    margin: 70px 0;
+    display: flex;
+    gap: 50px;
+    .quote {
+      position: relative;
+      z-index: 99;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 60px;
+        width: 60px;
+        background-size: 60px;
+        z-index: 1;
+        opacity: 0.2;
+        background-repeat: no-repeat;
+        background-image: url("../../assets/icon/quote.svg");
+      }
+    }
+    div {
+      flex: 5;
+    }
+    h5 {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 50px;
+      color: #002248;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+  .downloandApp {
     padding: 40px 50px;
-    background: #F4F4F4;
+    background: #f4f4f4;
     border-radius: 30px;
     display: flex;
     align-items: center;
-    .leftdownloanApp {
-        flex: 5;
-    }
-    .rightdownloanApp {
-        flex: 5;
+    .leftdownloandApp {
+      flex: 5;
+      .downloandIcon {
+        margin-top: 19px;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        gap: 13px;
+        flex-wrap: nowrap;
+        img {
+          width: 100px;
+        }
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 55px;
+        color: #002248;
+        font-family: "Montserrat", sans-serif;
+      }
+      span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: #002248;
+        opacity: 0.5;
+        font-family: "Montserrat", sans-serif;
+      }
     }
+    .rightdownloandApp {
+      flex: 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 70%;
+      }
+    }
+  }
 }

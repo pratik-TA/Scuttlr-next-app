@@ -7,7 +7,7 @@ import st from './AboutUs.module.scss'
 
 function AboutUs() {
   return (
-    <div className="container">
+    <div className={`${st.aboutUs} container`}>
       <BreadCrumbs />
       <h2>How It Works</h2>
       <div className={`${st.desc}`}>
@@ -48,10 +48,10 @@ function AboutUs() {
 
       <div className={`${st.videoContainer}`}>
         {/* 1 */}
-        <div>video</div>
+        <div className={`${st.video}`}>video</div>
 
         {/* 2 */}
-        <div>
+        <div className={`${st.videoDesc}`}>
           <h2>Our team</h2>
           <p>
             We work together every day to keep our promise to users to provide
@@ -107,7 +107,7 @@ function AboutUs() {
       </div>
 
       <div className={`${st.quotePara}`}>
-        <div>
+        <div className={`${st.quote}`}>
           {/* icon */}
           <h5>
             We have aided millions of tourists in planning wonderful journeys.
@@ -138,23 +138,23 @@ function AboutUs() {
       <div>top 3 blog list</div>
 
       {/* download app  */}
-      <div className={`${st.downloanApp}`}>
+      <div className={`${st.downloandApp}`}>
         {/* left  */}
-        <div className={`${st.leftdownloanApp}`}>
+        <div className={`${st.leftdownloandApp}`}>
           <p>Download Our App</p>
           <h1>App is available for free on app store</h1>
           <span>
             Lorem ipsum dolor sit amet, con sectetur adipiscing elit. The
             vestibul um sit turpis lectus felis faucibus.
           </span>
-          <div>
+          <div className={`${st.downloandIcon}`}>
             <img src={PlayStore.src} alt="playstore" />
             <img src={AppleStore.src} alt="applestore" />
           </div>
         </div>
 
         {/* right  */}
-        <div className={`${st.rightdownloanApp}`}>
+        <div className={`${st.rightdownloandApp}`}>
           <img src={MobileImage.src} alt="mobile image" />
         </div>
       </div>
